@@ -1,0 +1,178 @@
+html{
+  scroll-behavior: smooth;
+}
+.contenedor {  display: grid;
+    grid-template-columns: 3% 1fr 1fr 1fr 1fr 3%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". men men men men ."
+      "carrusel carrusel carrusel carrusel carrusel carrusel"
+      ". texto texto texto texto ."
+      ". info info info info ."
+      ". vid vid text text ."
+      ". fa fan fanc fancy ."
+      ". formu  formu  mapa  mapa  ."
+      ". piepag piepag piepag piepag .";
+  }
+  
+  .men { grid-area: men;}
+  
+  .carrusel { grid-area: carrusel;
+  margin-top: 4%;}
+  
+  .texto { grid-area: texto; 
+margin: 4%; 
+padding: 3%;
+border: 2px solid;
+border-radius: 15px;
+box-shadow: 2px 2px 4px gray;
+line-height: 150%;}
+.texto>h1, .texto>h2{
+  text-align: center;
+}
+  
+  .info {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "im ima imag"
+      "tim tima timag";
+    grid-area: info;}
+  
+  .im { grid-area: im;
+display: flex;
+justify-content: center;}
+  
+  .ima { grid-area: ima; 
+display: flex;
+justify-content: center;}
+  
+  .imag { grid-area: imag;
+display: flex;
+justify-content: center; }
+
+.im>img, .ima>img, .imag>img {
+  width: 100%;
+  height: auto;
+  max-width: 70%;
+}
+  
+  .tim { grid-area: tim; margin: 4%; 
+padding: 3%;
+border: 2px solid;
+border-radius: 15px;
+box-shadow: 2px 2px 4px gray;
+line-height: 150%;
+margin: 4%; }
+
+  
+  .tima { grid-area: tima; margin: 4%; 
+padding: 3%;
+border: 2px solid;
+border-radius: 15px;
+box-shadow: 2px 2px 4px gray;
+line-height: 150%;
+margin: 4%; }
+
+  
+  .timag { grid-area: timag;margin: 4%; 
+padding: 3%;
+border: 2px solid;
+border-radius: 15px;
+box-shadow: 2px 2px 4px gray;
+line-height: 150%;
+ }
+ .tim>h2, .tima>h2, .timag>h2{
+  text-align: center;
+}
+  
+  .vid { grid-area: vid; margin-bottom: 4%;
+ }
+ .vid>iframe{
+  width: 100%;
+  height: 100%;
+ }
+  
+  .text { grid-area: text; 
+    margin: 4%; 
+    padding: 3%;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px gray;
+    line-height: 150%; margin-bottom: 4%;}
+  
+  .fa { grid-area: fa; 
+    margin: 3%;
+}
+  
+  .fan { grid-area: fan; 
+    margin: 3%;
+}
+  
+  .fanc { grid-area: fanc; 
+    margin: 3%;
+}
+  
+  .fancy { grid-area: fancy;
+    margin: 3%;
+}
+
+.fa>a>img, .fan>a>img, .fanc>a>img, .fancy>a>img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(3px 3px 3px gray);
+  scale: .9;
+}
+  
+.fa>a>:hover, .fan>a>:hover, .fanc>a>:hover, .fancy>a>:hover{
+  scale: 1;
+  transition: .5s ease-in-out;
+}
+  .formu  { grid-area: formu ;
+margin: 3%;
+padding: 3%;
+line-height: 150%;
+margin-top: 4%; }
+  
+  .mapa  { grid-area: mapa ;
+  margin-top: 4%; }
+
+  .mapa>iframe{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .piepag {  display: grid;
+    grid-template-columns: 1fr .1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "por por por"
+      "re rede redes";
+    grid-area: piepag;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .por { grid-area: por;
+text-align: center;
+padding-top: 2%;}
+  
+  .re { grid-area: re; 
+
+text-align: right;}
+  
+  .rede { grid-area: rede; 
+text-align: center;}
+  
+  .redes { grid-area: redes; 
+text-align: left;}
+.re>a>img:hover , .rede>a>img:hover , .redes>a>img:hover {
+  filter: blur(2px);
+}
+  
